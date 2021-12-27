@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Cinzel:wght@900&display=swap" rel="stylesheet">
+    <title>James Pritchard</title>
+</head> 
+
+
+<header class="header">
+            <div class="signature">James Pritchard</div>
+            <div class="jobtitle">Front End Developer</div>
+</header>
+    
+
+
+<body>
+    <section class="skills text-center">
+        <div class="container">
+            <div class="split">
+                <div class="container--narrow">
+                    <h3>Skills</h3>
+                            <p>HTML/CSS/SCSS</p>
+                            <p>Javascript</p>
+                            <p>Typescript</p>
+                            <p>SVG (XML)</p>
+                </div>
+                <div class="container--narrow">
+                    <h3>Design</h3>
+                            <p>Responsive</p>
+                            <p>Animations</p>
+                            <p>Typography</p>
+                </div>
+                <div class="container--narrow">
+                    <h3>Tools</h3>
+                    <p>Angular</p>
+                    <p>Visual Studio Code</p>
+                    <p>Git/Github</p>
+                    <p>Figma</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project">
+        <div class="container">
+            <div><h2>Animated SVG Logo</h2></div>
+            <div class="split">
+                <div>
+                    <p>Modified a JPEG logo into animated SVG. Client is a chiropractic practice and the logo is based on a spine.
+                        I animated the SVG design using CSS keyframes with the goal of producing anatomical movement such as breathing/stretching.</p>
+                    <p><a href="https://suspicious-einstein-f9f487.netlify.app/">Live Demo</a><br>
+                    <a href="https://github.com/SuedePritch/Chiropractic">GitHub</a></p>
+                    <p>Hover over image to view original</p>
+                </div>
+                <div>
+                    <img src="superiorChiropraticLogo.jpeg" class="logo" id="original">
+                    <svg class="logo" id="new" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="200" height="200" fill="none"/>
+                        <rect class="background" width="200" height="200" fill="white"/>
+                        <circle class="outline-out" cx="100" cy="100" r="60" fill="rgb(50,0,125)"/>
+                        <circle class="outline-in" cx="100" cy="100" r="55" fill="white"/>
+                        <circle class="cervical" cx="100" cy="27" r="5" fill="rgb(200,0,175, 0.6)"/>
+                        <g class="upperThoracic">
+                                <circle class="whitespace1" cx="94" cy="45" r="12" fill="white"/>
+                                <circle class="filled1" cx="94" cy="45" r="7" fill="rgb(200,0,175,0.6)"/>
+                            </g>
+                            <circle class="thoracic" cx="90" cy="71" r="12" fill="rgb(200,0,175, 0.6)"/>
+                            <circle class="center" cx="100" cy="100" r="15" fill="rgb(200,0,175,0.6)"/>
+                            <g class="lowerLumbar">
+                                <circle class="whitespace2" cx="118" cy="153" r="12" fill="white"/>
+                                <circle class="filled2" cx="118" cy="153" r="7" fill="rgb(200,0,175,0.6)"/>
+                            </g>
+                            <circle class="lumbar" cx="120" cy="126" r="12" fill="rgb(200,0,175, 0.6)"/>
+                            <circle class="sacrum" cx="100" cy="173" r="6" fill="rgb(200,0,175, 0.6)"/>
+                        </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="project">
+        <div class="container">
+            <div><h2>Massage Therapy Website</h2></div>
+            <div class="split">
+                <div><a href="https://confident-shirley-cb21c6.netlify.app/">
+                    <img src="borealisLogo.png"></a></div>
+                <div>
+                    <p>Fully responsive single page website that utilizes HTML/SCSS to modernize the client's current website.</p>
+                    
+                    <p>Animated logo design using CSS animation keyframes on a text-cliped background image</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <section class="project">
+            <div class="container">
+                <div><h2>Health And Safety Management System</h2></div>
+                <div class="split">
+                    <div><h4>MEAN Stack Application. </h4>
+                        <ul>
+                        <li>Auth0 for Authentication/Authorization. </li>
+                        
+                        <li> ArcGIS API for customizable maps. </li>
+                        <li>Digital Field Level Hazard Assessments</li>
+                        <li>Alerts for H&S tickets nearing expiration.</li>
+                        <li>Provides critical information during emergencies.</li>
+                        <li>Covid screening.</li>
+                        <li>Incident Reporting</li>
+                        <li>Inspection Reporting</li>
+                        <li>Collection of policies, procedures, and regulations.</li>
+                    </ul>
+                    </div>
+                    <div><img src="https://thumbnails.production.thenounproject.com/zx0hTN5ZJB3FLFORBt9HhkSdQhs=/fit-in/1000x1000/photos.production.thenounproject.com/photos/377E9E57-C9D2-40F5-BC56-C117E6DB655D.jpg" alt="Workers with Ipad and hi-viz"></div>
+                </div>
+            </div>
+        </section>
+        
+    
+    
+</body>
+</html>

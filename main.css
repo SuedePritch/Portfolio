@@ -1,0 +1,219 @@
+:root {
+  --color-text-container: hsla(0, 0%, 12%, 0.08);
+  --color-primary: hsl(113, 96%, 80%);
+  --color-secondary: hsl(188, 90%, 40%);
+
+  /* font-family */
+  --ff-primary: "Roboto", sans-serif;
+  --ff-signature: "Arizonia", cursive;
+  --ff-fancy: "Cinzel", serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  background-image: linear-gradient(
+    135deg,
+    hsl(113, 96%, 80%) 25%,
+    hsl(188, 90%, 40%) 65%
+  );
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-weight: 900;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+.jobtitle {
+  font-family: var(--ff-fancy);
+  letter-spacing: 3px;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.6rem;
+}
+h3 {
+  font-weight: 900;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+h4 {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+a{
+  color:hsl(276, 100%, 45%);
+  text-decoration: none;
+
+}
+p {
+  font-size: 0.8em;
+}
+li {
+  font-size: 0.8em;
+}
+
+header,
+section {
+  padding: 2rem 3rem;
+}
+
+img {
+  max-width: 100%;
+  flex-basis: 100%;
+  padding: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  margin: auto 0;
+  width: min(90%, 70.5rem);
+}
+
+.container--narrow {
+  max-width: 34rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
+  align-items: baseline;
+  text-align: center;
+  margin: 0.5em;
+  margin-bottom: 0;
+}
+
+.signature {
+  font-family: var(--ff-signature);
+  font-size: 4rem;
+  line-height: 1.1;
+}
+.jobtitle {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skills,
+.project {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-text-container);
+  border-radius: 1rem;
+  margin: 2rem;
+  margin-top: 5rem;
+  padding: 1rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem hsl(0, 0%, 20%);
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+
+#new:hover{
+  opacity: 0;
+}
+#original{
+  position: absolute;
+  z-index:-1;
+}
+
+
+
+
+
+
+
+
+.cervical{
+  position: relative;
+  animation: cervical 3000ms ease-in-out infinite alternate-reverse;
+  -webkit-animation: cervical 3000ms ease-in-out infinite alternate-reverse;}
+@keyframes cervical {
+  0%    { transform: translate(0);} 
+  100%   {transform: translate(-4%, -3%);}}
+
+.upperThoracic{
+  position: relative;
+  animation: upperThoracic 3000ms ease-in-out infinite alternate-reverse;
+  -webkit-animation: upperThoracic 3000ms ease-in-out infinite alternate-reverse;}
+@keyframes upperThoracic {
+  0%    { transform: translate(0);} 
+  100%    { transform: translate(-5%, -2%);}}
+
+.thoracic{
+  position: relative;
+  animation: thoracic 3000ms 300ms ease-in-out infinite alternate-reverse;
+  -webkit-animation: thoracic 3000ms 300ms ease-in-out infinite alternate-reverse;}
+@keyframes thoracic {
+  0%    { transform: translate(0px);} 
+  100%   {transform: translate(-5%, -1%);}}
+
+.lumbar{
+  position: relative;
+  animation: lumbar 3000ms 350ms ease-in-out infinite alternate;
+  -webkit-animation: lumbar 3000ms 350ms ease-in-out infinite alternate;}
+@keyframes lumbar {
+  0%    { transform: translate(0);}  
+  100%    {transform: translate(-7%, 3%)}}
+.lowerLumbar{
+  position: relative;
+  animation: lowerLumbar 3000ms 400ms ease-in-out infinite alternate;
+  -webkit-animation: lowerLumbar 3000ms 400ms ease-in-out infinite alternate;}
+@keyframes lowerLumbar {
+  0%    { transform: translateX(0);} 
+  100%    { transform: translateX(-7%);}  }
+.sacrum{
+  position: relative;
+  animation: sacrum 3000ms  450ms ease-in-out infinite alternate-reverse;   
+  -webkit-animation: sacrum 3000ms  450ms ease-in-out infinite alternate-reverse;} 
+@keyframes sacrum {
+  0%    { transform: translateX(-3px);} 
+  100%   {transform: translateX(3px);}}
+
+
+
+
+
+
+
+
+@media (min-width: 40em) {
+  .split {
+    flex-direction: row;
+  }
+  .split > * {
+    flex-basis: 100%;
+  }
+  .split > * + * {
+    margin-left: 2em;
+  }
+}
