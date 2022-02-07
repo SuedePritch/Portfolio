@@ -26,58 +26,64 @@
                 <div class="container--narrow">
                     <h3>Skills</h3>
                             <p>HTML/CSS/SCSS</p>
-                            <p>Javascript</p>
-                            <p>Typescript</p>
-                            <p>SVG (XML)</p>
+                            <p>Javascript/Typescript</p>
+                            <p>Angular</p>
+                            <p>NodeJS + MongoDB</p>
                 </div>
                 <div class="container--narrow">
                     <h3>Design</h3>
-                            <p>Responsive</p>
-                            <p>Animations</p>
+                            <p>Custom SVGs</p>
+                            <p>Fully Responsive Layouts</p>
+                            <p>Custom Animations</p>
                             <p>Typography</p>
                 </div>
                 <div class="container--narrow">
                     <h3>Tools</h3>
-                    <p>Angular</p>
                     <p>Visual Studio Code</p>
                     <p>Git/Github</p>
                     <p>Figma</p>
+                    <p>Express</p>
                 </div>
             </div>
         </div>
     </section>
     <section class="project">
         <div class="container">
-            <div><h2>Animated SVG Logo</h2></div>
+            <div><h2>Chiropractic Website</h2></div>
             <div class="split">
                 <div>
-                    <p>Modified a JPEG logo into animated SVG. Client is a chiropractic practice and the logo is based on a spine.
-                        I animated the SVG design using CSS keyframes with the goal of producing anatomical movement such as breathing/stretching.</p>
-                    <p><a href="https://suspicious-einstein-f9f487.netlify.app/">Live Demo</a><br>
-                    <a href="https://github.com/SuedePritch/Chiropractic">GitHub</a></p>
-                    <p>Hover over image to view original</p>
+                    <p>Modern website with a fully responsive design,
+                        custom svg animations on spine logo,
+                        custom light/dark mode icon, 
+                        snap-scrolling in mobile view,
+                        custom css colour variables,
+                        light/dark mode defaults to system settings and will save preference in local storage if toggled. 
+                    </p>
+                    <p><a href="https://suspicious-einstein-f9f487.netlify.app/" target="_blank">Live Demo</a><br>
+                        <a href="http://www.superiorchiropractic.ca/" target="_blank">Reference Site</a><br>
+                    <a href="https://github.com/SuedePritch/Chiropractic" target="_blank">GitHub</a></p>
+                    <p>Hover to view original JPEG</p>
                 </div>
                 <div>
                     <img src="superiorChiropraticLogo.jpeg" class="logo" id="original">
-                    <svg class="logo" id="new" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="200" height="200" fill="none"/>
-                        <rect class="background" width="200" height="200" fill="white"/>
-                        <circle class="outline-out" cx="100" cy="100" r="60" fill="rgb(50,0,125)"/>
-                        <circle class="outline-in" cx="100" cy="100" r="55" fill="white"/>
-                        <circle class="cervical" cx="100" cy="27" r="5" fill="rgb(200,0,175, 0.6)"/>
+                    <svg class="logoSvg" id="new"viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="rect" width="200" height="200"></rect>
+                        <circle class="outline-out" cx="100" cy="100" r="60"/>
+                        <circle class="outline-in" cx="100" cy="100" r="55"/>
+                        <circle class="cervical" cx="100" cy="27" r="5" "/>
                         <g class="upperThoracic">
-                                <circle class="whitespace1" cx="94" cy="45" r="12" fill="white"/>
-                                <circle class="filled1" cx="94" cy="45" r="7" fill="rgb(200,0,175,0.6)"/>
+                                <circle class="whitespace1" cx="96" cy="45" r="12"/>
+                                <circle class="filled1" cx="96" cy="45" r="7""/>
                             </g>
-                            <circle class="thoracic" cx="90" cy="71" r="12" fill="rgb(200,0,175, 0.6)"/>
-                            <circle class="center" cx="100" cy="100" r="15" fill="rgb(200,0,175,0.6)"/>
+                            <circle class="thoracic" cx="97" cy="69" r="12" />
+                            <circle class="center" cx="100" cy="99" r="15" />
                             <g class="lowerLumbar">
-                                <circle class="whitespace2" cx="118" cy="153" r="12" fill="white"/>
-                                <circle class="filled2" cx="118" cy="153" r="7" fill="rgb(200,0,175,0.6)"/>
+                                <circle class="whitespace2" cx="118" cy="155" r="12"/>
+                                <circle class="filled2" cx="118" cy="155" r="7" />
                             </g>
-                            <circle class="lumbar" cx="120" cy="126" r="12" fill="rgb(200,0,175, 0.6)"/>
-                            <circle class="sacrum" cx="100" cy="173" r="6" fill="rgb(200,0,175, 0.6)"/>
-                        </svg>
+                            <circle class="lumbar" cx="118" cy="126" r="12"/>
+                            <circle class="sacrum" cx="100" cy="173" r="6"/>
+                    </svg>
                 </div>
             </div>
         </div>

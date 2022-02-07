@@ -3,6 +3,11 @@
   --color-primary: hsl(113, 96%, 80%);
   --color-secondary: hsl(188, 90%, 40%);
 
+
+  --color-logo-main:hsla(308, 100%, 39%, 0.6);
+  --color-logo-accent:hsla(264, 100%, 25%, 0.95);
+  --color-logo-background:hsl(0, 0%, 100%);
+
   /* font-family */
   --ff-primary: "Roboto", sans-serif;
   --ff-signature: "Arizonia", cursive;
@@ -144,13 +149,35 @@ img {
 #original{
   position: absolute;
   z-index:-1;
+  width: fit-content;
 }
 
 
 
 
-
-
+/* SVG Logo styling and animations */
+/*Spine color*/
+.cervical,
+.filled1,
+.thoracic,
+.center,
+.filled2,
+.lumbar,
+.sacrum{
+    fill:var(--color-logo-main)
+}
+/* Border Circle */
+.outline-out{
+    fill:var(--color-logo-accent)
+}
+/* Padding and Inner background*/
+.outline-in,
+.whitespace1,
+.whitespace2,
+rect
+{
+    fill:var(--color-logo-background);
+}
 
 
 .cervical{
@@ -176,7 +203,13 @@ img {
 @keyframes thoracic {
   0%    { transform: translate(0px);} 
   100%   {transform: translate(-5%, -1%);}}
-
+.center{
+    position: relative;
+    animation: center 3000ms 300ms ease-in-out infinite alternate-reverse;
+    -webkit-animation: center 3000ms 300ms ease-in-out infinite alternate-reverse;}
+@keyframes center {
+    0%    { transform: translate(0px);} 
+    100%   {transform: translate(1%, -1%);}}
 .lumbar{
   position: relative;
   animation: lumbar 3000ms 350ms ease-in-out infinite alternate;
@@ -206,7 +239,7 @@ img {
 
 
 
-@media (min-width: 40em) {
+@media (min-width: 42em) {
   .split {
     flex-direction: row;
   }
