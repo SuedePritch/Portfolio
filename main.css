@@ -143,6 +143,13 @@ img {
 }
 
 
+
+
+
+
+
+
+
 #new:hover{
   opacity: 0;
 }
@@ -151,6 +158,8 @@ img {
   z-index:-1;
   width: fit-content;
 }
+
+
 
 
 
